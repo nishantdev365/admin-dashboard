@@ -35,14 +35,14 @@ const Data = () => {
       });
   };
   return (
-    <div className="w-full ml-8 py-4">
+    <div className="w-screen md:ml-8 md:py-4">
       <div className="header flex justify-between">
         <p className="font-montserrat text-lg font-bold leading-7 tracking-normal">
           Dashboard
         </p>
 
         <div className="flex justify-center items-center">
-          <label className="relative block">
+          <label className="relative block w-2/4">
             <span className="sr-only">Search</span>
             <span className="absolute inset-y-0 right-0 flex items-center pr-2">
               <img
@@ -85,18 +85,18 @@ const Data = () => {
                 <div className="py-1">
                   <p className="cursor-pointer bg-gray-100 text-gray-900 block px-4 py-2 text-sm">{user.name}</p>
                   <p className="cursor-pointer bg-gray-100 text-gray-900 block px-4 py-2 text-sm" onClick={handleLogout}>logout</p>
-               
+
                 </div>
               </Menu.Item>
             </Transition>
           </Menu>
 
-         
+
         </div>
       </div>
 
-      <div className="cards flex justify-between py-4">
-        <div className="card w-56 h-28 p-4 bg-green-200 rounded-2xl">
+      <div className="cards flex justify-between flex-col md:flex-row py-4">
+        <div className="card w-full md:w-56 mb-4  h-28 p-4 bg-green-200 rounded-2xl">
           <div className="card_icon flex flex-row-reverse">
             <img className="w-7 h-5" src={Revenue} alt="Revenue" />
           </div>
@@ -108,7 +108,7 @@ const Data = () => {
           </p>
         </div>
 
-        <div className="card w-56 h-28 p-4 bg-yellow-100 rounded-2xl">
+        <div className="card w-full md:w-56 mb-4  h-28 p-4 bg-yellow-100 rounded-2xl">
           <div className="card_icon flex flex-row-reverse">
             <img className="w-7 h-5" src={Transactionb} alt="Revenue" />
           </div>
@@ -119,7 +119,7 @@ const Data = () => {
             1,520
           </p>
         </div>
-        <div className="card w-56 h-28 p-4 bg-red-100 rounded-2xl">
+        <div className="card w-full md:w-56 mb-4 h-28 p-4 bg-red-100 rounded-2xl">
           <div className="card_icon flex flex-row-reverse">
             <img className="w-7 h-5" src={Likes} alt="Revenue" />
           </div>
@@ -130,7 +130,7 @@ const Data = () => {
             9,721
           </p>
         </div>
-        <div className="card w-56 h-28 p-4 bg-indigo-200 rounded-2xl">
+        <div className="card w-full md:w-56 mb-4  h-28 p-4 bg-indigo-200 rounded-2xl">
           <div className="card_icon flex flex-row-reverse">
             <img className="w-7 h-5" src={Users} alt="Revenue" />
           </div>
@@ -142,6 +142,10 @@ const Data = () => {
           </p>
         </div>
       </div>
+
+
+
+
       <div className="activities_card bg-white rounded-2xl p-8">
         <div className="flex justify-between mb-4">
           <div className="chart_details">
@@ -155,9 +159,9 @@ const Data = () => {
               <img src={Dropdown} alt="Dropdown" />
             </div>
           </div>
-          <div className="ellipse w-48 flex justify-evenly">
+          <div className="ellipse w-48 flex flex-col md:flex-row justify-evenly">
             <div className="ellipse1 flex justify-center items-center">
-              ``
+              
               <img src={Ellipse1} alt="Ellipse1" />
               <p className="font-montserrat text-sm font-normal leading-5 tracking-normal px-2">
                 Guest
@@ -175,8 +179,8 @@ const Data = () => {
           <LineChart />
         </div>
       </div>
-      <div className="bottom_cards flex justify-between">
-        <div className="top_products_card bg-white mt-4 mr-4 w-1/2 p-4 rounded-2xl">
+      <div className="bottom_cards flex flex-col md:flex-row justify-between">
+        <div className="top_products_card w-full bg-white mt-4 mr-4 md:w-1/2 p-4 rounded-2xl">
           <div className="chart_details flex justify-between">
             <p className="font-montserrat text-base font-bold leading-6 tracking-normal">
               Top products
@@ -198,7 +202,7 @@ const Data = () => {
             </div> */}
           </div>
         </div>
-        <div className="schedules_card bg-white mt-4 ml-4 p-4 rounded-2xl w-1/2">
+        <div className="schedules_card w-full bg-white mt-4 p-4 rounded-2xl md:w-1/2">
           <div className="chart_details flex justify-between">
             <p className="font-montserrat text-base font-bold leading-6 tracking-normal">
               Today’s schedule

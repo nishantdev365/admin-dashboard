@@ -18,9 +18,8 @@ const Signin = () => {
 
   return (
     <>
-      {/* <div className="w-385 h-356 top-409 left-832 rounded-10 border"> */}
 
-      <div className="flex min-h-full w-96 flex-1 flex-col justify-center px-2 py-2 lg:px-8 bg-white rounded-xl">
+      <div className="flex min-h-full w-screen md:w-96 flex-1 flex-col justify-center px-2 py-2 lg:px-8 bg-white rounded-xl">
         <div className="mt-2 mb-2 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" action="#" method="POST">
             <div>
@@ -89,7 +88,7 @@ const Signin = () => {
         </div>
       </div>
 
-      {/* </div> */}
+  
     </>
   );
 };

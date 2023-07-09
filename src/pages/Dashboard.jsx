@@ -4,7 +4,7 @@ import Data from "../components/Data";
 const Dashboard = () => {
   return (
     <>
-      <div className="h-auto w-auto bg-gray-200 p-8 flex">
+      <div className="h-auto w-screen bg-gray-200 p-4 md:p-8 flex ">
       <Navigation />
       <Data />
 
